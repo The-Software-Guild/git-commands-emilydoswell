@@ -1,0 +1,7 @@
+.grey-box {
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  padding: 16px;
+  box-shadow: rgb(43 43 46 / 8%) 0px -1px 4px, rgb(43 43 46 / 8%) 0px 4px 8px;
+  border-radius: 8px;
+}

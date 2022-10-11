@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <form name="publicTransferEnquiry" method="post" action="https://www.alpinexpress.com/make-booking.php" class="quick-quote pteForm" target="_top">
+      <div class="grey-box">
+        <div class="tl">
+          <div class="tr">
+            <div class="bl">
+              <div class="br">
+                <div class="title">
+                  Book a transfer
+                </div>
+    
+                <div class="divider"></div>
+    
+                <div class="body">
+                  <div class="return-select">
+                    <div id="publicTransferEnquiry_isReturn"><input type="radio" id="publicTransferEnquiry_isReturn_0" name="publicTransferEnquiry[isReturn]" required="required" value="0" /><label for="publicTransferEnquiry_isReturn_0" class="required">One way</label><input type="radio" id="publicTransferEnquiry_isReturn_1" name="publicTransferEnquiry[isReturn]" required="required" value="1" checked="checked" /><label for="publicTransferEnquiry_isReturn_1" class="required">Return</label></div>
+                  </div>
+                  <select id="publicTransferEnquiry_location1" name="publicTransferEnquiry[location1]" required="required" class="place-select"><option value="">From:</option><option value="1">Verbier</option><option value="2" selected="selected">Geneva Airport</option><option disabled="disabled">-------------------</option><option value="3">Martigny Train Station</option><option value="4">Sion</option><option value="13">Geneva City</option><option value="19">Milan</option><option value="23">Saas Fee</option><option value="26">Villars</option><option value="28">Zurich Airport</option><option value="35">Le Chable Train Station</option></select>
+                  <select id="publicTransferEnquiry_location2" name="publicTransferEnquiry[location2]" required="required" class="place-select"><option value="">To:</option><option value="1" selected="selected">Verbier</option><option value="2">Geneva Airport</option><option disabled="disabled">-------------------</option><option value="3">Martigny Train Station</option><option value="4">Sion</option><option value="13">Geneva City</option><option value="19">Milan</option><option value="23">Saas Fee</option><option value="26">Villars</option><option value="28">Zurich Airport</option><option value="35">Le Chable Train Station</option></select>
+    
+                  <div id="date1-ctnr">
+                    <label class="dateTimeLabel required">Pickup #1</label>
+                    <div id="publicTransferEnquiry_date1" class="dateTime"><input type="text" id="publicTransferEnquiry_date1_date" name="publicTransferEnquiry[date1][date]" required="required" /><div id="publicTransferEnquiry_date1_time">
+                <select id="publicTransferEnquiry_date1_time_hour" name="publicTransferEnquiry[date1][time][hour]"><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option></select>:<select id="publicTransferEnquiry_date1_time_minute" name="publicTransferEnquiry[date1][time][minute]"><option value="00">00</option><option value="05">05</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option></select>        </div></div>
+                    <div style="clear:both;"></div>
+                  </div>
+    
+                  <div id="date2-ctnr">
+                    <label class="dateTimeLabel">Pickup #2</label>
+                    <div id="publicTransferEnquiry_date2" class="dateTime"><input type="text" id="publicTransferEnquiry_date2_date" name="publicTransferEnquiry[date2][date]" /><div id="publicTransferEnquiry_date2_time">
+                <select id="publicTransferEnquiry_date2_time_hour" name="publicTransferEnquiry[date2][time][hour]"><option value=""></option><option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option></select>:<select id="publicTransferEnquiry_date2_time_minute" name="publicTransferEnquiry[date2][time][minute]"><option value=""></option><option value="00">00</option><option value="05">05</option><option value="10">10</option><option value="15">15</option><option value="20">20</option><option value="25">25</option><option value="30">30</option><option value="35">35</option><option value="40">40</option><option value="45">45</option><option value="50">50</option><option value="55">55</option></select>        </div></div>
+                    <div style="clear:both;"></div>
+                  </div>
+    
+                  <label class="paxLabel required" for="publicTransferEnquiry_pax">Passengers: (including children)</label>
+                  <select id="publicTransferEnquiry_pax" name="publicTransferEnquiry[pax]"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option></select>
+    
+                  <button type="submit" id="publicTransferEnquiry_save" name="publicTransferEnquiry[save]" class="button">Get quote</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
