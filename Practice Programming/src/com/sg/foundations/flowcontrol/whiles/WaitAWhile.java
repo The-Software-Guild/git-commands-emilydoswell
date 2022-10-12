@@ -15,6 +15,6 @@ public class WaitAWhile {
 
         System.out.println("Oh. It's " + timeNow + " o'clock.");
         System.out.println("Guess I should go to bed ...");
-        
+
     }
 }
