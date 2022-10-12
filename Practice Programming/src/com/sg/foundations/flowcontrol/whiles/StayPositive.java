@@ -1,9 +1,18 @@
 package com.sg.foundations.flowcontrol.whiles;
 
+import java.util.Scanner;
+
 public class StayPositive {
     public static void main(String[] args) {
         // Create integer to count down from
-        int i = 10;
+        int i;
+
+        // Ask user for starting number
+        System.out.println("What number do you want to count down from?");
+
+        //Create Scanner
+        Scanner input = new Scanner(System.in);
+        i = input.nextInt();
 
         System.out.println("Counting down....");
 
