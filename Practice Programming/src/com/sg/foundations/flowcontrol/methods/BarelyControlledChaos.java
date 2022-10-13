@@ -1,6 +1,7 @@
 package com.sg.foundations.basics.methods;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class BarelyControlledChaos {
 
@@ -51,6 +52,20 @@ public class BarelyControlledChaos {
         String randomAnimal = animals[randomIndex];
         return randomAnimal;
     }
+
+    // // Method 2.5 - refactored methods 1 & 2
+    // public static String choseSomething(String[] something){
+    //     Random rng = new Random();
+    //
+    //     //Create Scanner
+    //     Scanner input = new Scanner(System.in);
+    //     String userInput = input.nextInt();
+    //
+    //     String[] animals = new String[] { "Tiger", "Bear", "Lion", "Dog", "Whale" };
+    //     int randomIndex = rng.nextInt( animals.length );
+    //     String randomAnimal = animals[randomIndex];
+    //     return randomAnimal;
+    // }
 
     // Method 3 - Write another method that returns a random integer chosen from a range (min/max) that can be either of the two numbers or anything between.
     public static int choseNumber(int a, int b){
