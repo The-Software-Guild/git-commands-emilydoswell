@@ -9,13 +9,13 @@ public class BarelyControlledChaos {
         String color = choseColour(); // call color method here
         String animal = choseAnimal(); // call animal method again here
         String colorAgain = choseColour(); // call color method again here
-        ??? weight = ???; // call number method,
+        int weight = choseNumber(5, 200); // call number method,
         // with a range between 5 - 200
-        ??? distance = ???; // call number method,
+        int distance = choseNumber(10, 20); // call number method,
         // with a range between 10 - 20
-        ??? number = ???; // call number method,
+        int number = choseNumber(10000, 20000); // call number method,
         // with a range between 10000 - 20000
-        ??? time = ???; // call number method,
+        int time = choseNumber(2, 6); // call number method,
         // with a range between 2 - 6
 
         System.out.println("Once, when I was very small...");
@@ -56,10 +56,10 @@ public class BarelyControlledChaos {
     public static int choseNumber(int a, int b){
         Random rng = new Random();
 
-        // generate 10 numbers, each between 0 and 9
-        for (int i=a; i<= b; i++) {
-            int randomNumber = rng.nextInt(b);
-            System.out.println(randomNumber);
-        }
+        int low = a;
+        int high = b;
+        int result = rng.nextInt(high-low) + low;
+
+        return result;
     }
 }
