@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class DogGenetics {
     public static void main(String[] args) {
-        // Ask user for dog name
+        // Ask user to input dog name
         System.out.println("What is your dog's name?");
 
         // Create Scanner
