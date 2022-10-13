@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 
 public class RockPaperScissors {
@@ -10,16 +12,35 @@ public class RockPaperScissors {
             Scanner input = new Scanner(System.in);
             int userInput = input.nextInt();
 
-            // Print out user input
-            System.out.println("You entered: " + userInput + " times");
+            // Max rounds = 10, min rounds = 1.
+            // If the user asks for something outside this range, the program prints an error message and quits.
+            if (userInput > 10 || userInput < 1) {
+                System.out.println("Sorry! That isn't in our range");
+            }
 
+            // If the number of rounds is in range, the program plays that number of rounds.
+            System.out.println("Okay, we will play " + userInput + " rounds");
+            System.out.println("type 1 for 'rock', 2 for 'paper' or 3 for 'scissors' when you're ready, go!");
+            userInput = input.nextInt();
+
+            // Generate number between 1 and 3.
+            Random rng = new Random();
+            int randomNumber = rng.nextInt(3) + 1;
+
+            // Sequence
+            if (userInput == randomNumber) {
+                System.out.println("It's a draw!");
+            } else if ((userInput == 1 && randomNumber == 2) || (userInput == 3 && randomNumber == 1) || (userInput == 2 && randomNumber == 3) ) {
+                System.out.println("I win!");
+            } else if ((userInput == 2 && randomNumber == 1) || (userInput == 1 && randomNumber == 3) || (userInput == 3 && randomNumber == 2) ) {
+                System.out.println("You win!");
+            } else {
+                System.out.println("I'm sorry I don't recognise that number");
+            }
         }
 
 }
 
-// Maximum number of rounds = 10, minimum number of rounds = 1.  If the user asks for something outside this range, the program prints an error message and quits.
-// If the number of rounds is in range, the program plays that number of rounds.  Each round is played according to the requirements below.
-// For each round of Rock, Paper, Scissors, the program does the following:
 // The computer asks the user for his/her choice (Rock, Paper, or Scissors).
 // Hint: 1 = Rock, 2 = Paper, 3 = Scissors
 // After the computer asks for the user’s input, the computer randomly chooses Rock, Paper, or Scissors and displays the result of the round (tie, user win, or computer win).
