@@ -8,15 +8,13 @@ public class SimpleCombination {
         int[] wholeNumbers = new int[24];
 
         // Combining code should go here!
-        for (int i = 0; i < firstHalf.length; i++)
-        {
+        for (int i = 0; i < firstHalf.length; i++) {
             // copy the element at the current index
             // from firstHalf to wholeNumbers
             wholeNumbers[i] = firstHalf[i];
         }
 
-        for (int i = 0; i < secondHalf.length; i++)
-        {
+        for (int i = 0; i < secondHalf.length; i++) {
             // copy the element at the current index
             // from firstHalf to wholeNumbers
             wholeNumbers[firstHalf.length + i] = secondHalf[i];
