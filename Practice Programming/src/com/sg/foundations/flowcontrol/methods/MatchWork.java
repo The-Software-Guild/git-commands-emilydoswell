@@ -3,11 +3,11 @@ package com.sg.foundations.basics.methods;
 public class MatchWork {
     public static void main(String[] args) {
 
-        System.out.println(" The word Cart should come before Horse alphabetically : " + comesBefore(???));
-        System.out.println(" Half of 42 = " + halfOf(???));
-        System.out.println(" (short) Pi = " + pi(???));
-        System.out.println(" The first letter of the word Llama is: " + firstLetter(???));
-        System.out.println(" 1337 x 1337 = " + times1337(???));
+        System.out.println(" The word Cart should come before Horse alphabetically : " + comesBefore("hello you", "hey"));
+        System.out.println(" Half of 42 = " + halfOf(42.0));
+        System.out.println(" (short) Pi = " + pi());
+        System.out.println(" The first letter of the word Llama is: " + firstLetter("L"));
+        System.out.println(" 1337 x 1337 = " + times1337(1337));
 
     }
 
