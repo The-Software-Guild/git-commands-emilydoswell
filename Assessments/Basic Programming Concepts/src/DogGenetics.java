@@ -17,13 +17,17 @@ public class DogGenetics {
         // Create array of dog breeds
         String[] dogBreeds = {"St. Bernard", "Chihuahua", "Dramatic RedNosed Asian Pug", "Common Cur", "King Doberman"};
 
+        // Loop through dog breeds array
         for (int i = 0; i < dogBreeds.length; i++) {
+            // Generate random number between 0 and 100.
             Random rng = new Random();
             int randomNumber = rng.nextInt(100) + 1;
 
+            // Print percentage along with dog breed
             System.out.println(randomNumber + "% " + dogBreeds[i]);
         }
 
+        // Print finishing statement
         System.out.println("Wow, that's QUITE the dog!");
     }
 }
