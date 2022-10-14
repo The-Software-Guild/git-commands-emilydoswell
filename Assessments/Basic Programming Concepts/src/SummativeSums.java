@@ -5,7 +5,7 @@ public class SummativeSums {
         int[] ex2 = { 999, -60, -77, 14, 160, 301 };
         int[] ex3 = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180, 190, 200, -99 };
 
-        // Print sum of each array 
+        // Print sum of each array
         System.out.println("#1 Array Sum: " + totalArray(ex1));
         System.out.println("#2 Array Sum: " + totalArray(ex2));
         System.out.println("#3 Array Sum: " + totalArray(ex3));
