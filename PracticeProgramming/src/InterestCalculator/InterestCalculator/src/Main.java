@@ -1,6 +1,9 @@
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Main {
+    private static final DecimalFormat df = new DecimalFormat("0.00");
+
     public static void main(String[] args) {
         // Ask user for total investment
         System.out.println("How much do you want to invest?");
@@ -22,16 +25,14 @@ public class Main {
         System.out.println("Calculating...");
         System.out.println("Year 1:");
         System.out.println("Began with $" + totalInvest);
-        System.out.println("Earned $" + earned);
-        System.out.println("Ended with $" + totalInvest + earned);
+        System.out.println("Earned $" + df.format((earned - totalInvest)));
+        System.out.println("Ended with $" + df.format(earned));
     }
 
     public static double calculateInterest(double currentBalance, double annualInterestRate) {
         // Calculate the interest after 1 year
-        double interest = currentBalance * (Math.pow(4)(1 +((annualInterestRate/4)/100)));
+        double interest = currentBalance * (Math.pow((1 +((annualInterestRate/4)/100)), 4));
         System.out.println("I've calculated the interest is... " + interest);
         return interest;
     }
 }
-
-// Can't figure out why 10% annually = 551.91?
