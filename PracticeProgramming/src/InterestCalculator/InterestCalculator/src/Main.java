@@ -10,7 +10,7 @@ public class Main {
 
         //Create Scanner
         Scanner input = new Scanner(System.in);
-        int totalInvest = input.nextInt();
+        double totalInvest = input.nextDouble();
 
         // Ask user for years of investing
         System.out.println("How many years are investing? ");
@@ -20,19 +20,23 @@ public class Main {
         System.out.println("What is the annual interest rate % growth?");
         int interestRate = input.nextInt();
 
-        double earned = calculateInterest(totalInvest, interestRate);
+        for (int i = 0; i < yearsOfInvest; i++) {
+            //
+            double earned = calculateInterest(totalInvest, interestRate);
 
-        System.out.println("Calculating...");
-        System.out.println("Year 1:");
-        System.out.println("Began with $" + totalInvest);
-        System.out.println("Earned $" + df.format((earned - totalInvest)));
-        System.out.println("Ended with $" + df.format(earned));
+            System.out.println("Year " + (i + 1));
+            System.out.println("Began with $" + df.format(totalInvest));
+            System.out.println("Earned $" + df.format((earned - totalInvest)));
+            System.out.println("Ended with $" + df.format(earned));
+
+            totalInvest = earned;
+        }
+
     }
 
     public static double calculateInterest(double currentBalance, double annualInterestRate) {
         // Calculate the interest after 1 year
         double interest = currentBalance * (Math.pow((1 +((annualInterestRate/4)/100)), 4));
-        System.out.println("I've calculated the interest is... " + interest);
         return interest;
     }
 }
