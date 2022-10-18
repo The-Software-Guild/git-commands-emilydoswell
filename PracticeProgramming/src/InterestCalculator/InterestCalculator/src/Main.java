@@ -28,7 +28,7 @@ public class Main {
 
     public static double calculateInterest(double currentBalance, double annualInterestRate) {
         // Calculate the interest after 1 year
-        double interest = currentBalance * (1 +((annualInterestRate/4)/100));
+        double interest = currentBalance * (Math.pow(4)(1 +((annualInterestRate/4)/100)));
         System.out.println("I've calculated the interest is... " + interest);
         return interest;
     }
